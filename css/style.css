@@ -1,0 +1,96 @@
+p:hover, h1:hover
+{
+color: yellow;
+    border-bottom: 15px;
+}
+
+footer:hover
+{
+    color:red;
+}
+
+header
+{
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    background-color: darkkhaki;
+}
+    header img
+    {
+    width: 100px;
+    height: 100px;
+    margin: 40px 50px 40px 50px;
+    float: left;
+    }
+
+     header nav
+    {
+    margin: 40px 50px 40px 0;
+    float: right;
+    height: 50px;
+    background-color: #f8ec1b;
+    width: auto;
+
+    }
+
+    header nav ul
+    {
+        text-align: center;
+        padding: 0;
+    }
+
+     header nav ul li
+     {
+         display: inline;
+         list-style: none;
+         margin:auto 5px;
+         font-style: italic;
+         text-align: center;
+         padding: 5px;
+     }
+
+    header nav ul li a
+    {
+        text-decoration: none;
+    }
+
+ul a:hover
+{
+    border-bottom: 15px sloid red;
+}
+main
+{
+    width: 70%;
+    float: left;
+    height: 500px;
+
+}
+.art1
+{
+    background-color: green;
+    margin: auto 10px;
+}
+
+.art2
+{
+    background-color: chartreuse;
+    margin:auto 10px;
+}
+aside
+{
+    float: right;
+    height: 500px;
+    background-color: darksalmon;
+    width: 30%;
+    margin-top: 5px;
+}
+
+footer
+{
+    height: 50px;
+    background-color: #aaaaaa;
+    float: left;
+    margin: 10px;
+    width:100%;
+}
