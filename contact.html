@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/apple-logo_318-40184.jpg">
+
+        <nav>
+            <ul>
+                <li><a href="index.html" target=”_blank”>HOME</a></li>
+                <li><a href="contact.html" target=”_blank”>Kontakt</a></li>
+                <li><a href="http://www.szczecin.kwpsp.gov.pl" target=”_blank”>test3</a></li>
+                <li><a href="#" target=”_blank”>test4</a></li>
+                <li><a href="#" target=”_blank”>test5</a></li>
+                <li><a href="#" target=”_blank”>test6</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <main>
+    <!-- formularz-->
+        <h1>Kontakt</h1>
+        <form action="" method="">
+            Imie i Nazwisko<br/><input name="Imie i Nazwisko" type="text" placeholder="Imię i Nazwisko" value="" required><br/>
+        Telefon<br/><input type="tel" placeholder="telefon" value="" required><br/>
+        email<br/><input type="email" placeholder="email" required><br/>
+        hasło<br/><input type="password" placeholder="hasło" required><br/>
+        data urodzenia<br/><input type="date" placeholder="data urodzenia" required><br/>
+        Wstaw plik<br/><input type="file" ><br/>
+        Numer<br/><input type="number" value="18"><br/>
+        Uwagi<br/>
+        <textarea name="text" placeholder="Uwagi" rows="" cols="" required></textarea><br/>
+        <input type="submit" value="wyślij">
+        <input type="reset" value="wyczyść">
+        </form>
+
+    <!--lista rozwijana-->
+        <h2>Wyszukiwanie</h2>
+        <form action="" method="">
+            <select name="">
+                <option value="Audi">Audi</option><br/>
+                <option value="VW" disabled>VW</option><br/>
+                <option value="BMW">BMW</option><br/>
+                <option value="Toyota">Toyota</option><br/>
+
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="FireFox">FireFox</option><br/>
+                    <option value="Chrome">Chrome</option><br/>
+                    <option value="Opera">Opera</option><br/>
+                    <option value="Safari">Safari</option><br/>
+                </datalist>
+            </select>
+        </form>
+
+
+
+
+    </main>
+
+    <aside>
+        prawa część strony
+    </aside>
+    <footer>
+        to jest stopka strony
+    </footer>
+</body>
+</html>

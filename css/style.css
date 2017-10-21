@@ -1,7 +1,6 @@
-p:hover, h1:hover
+a:hover
 {
-color: yellow;
-    border-bottom: 15px;
+    color: red;
 }
 
 footer:hover
@@ -29,7 +28,7 @@ header
     margin: 40px 50px 40px 0;
     float: right;
     height: 50px;
-    background-color: #f8ec1b;
+    background-color: rgba(255, 255, 255, 0.01);
     width: auto;
 
     }
@@ -48,6 +47,7 @@ header
          font-style: italic;
          text-align: center;
          padding: 5px;
+
      }
 
     header nav ul li a
@@ -57,30 +57,40 @@ header
 
 ul a:hover
 {
-    border-bottom: 15px sloid red;
+    border-bottom: 15px solid red;
 }
 main
 {
     width: 70%;
     float: left;
-    height: 500px;
+    height: auto;
 
 }
-.art1
-{
-    background-color: green;
+    .art1
+    {
+    background-color: white;
     margin: auto 10px;
-}
+    text-align: justify;
+        }
 
-.art2
-{
-    background-color: chartreuse;
+    .art2
+    {
+    background-color: white;
     margin:auto 10px;
-}
+    text-align: justify;
+    }
+
+    .art3
+    {
+    margin:auto 10px;
+    text-align: justify;
+    }
+
 aside
 {
     float: right;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     background-color: darksalmon;
     width: 30%;
     margin-top: 5px;
@@ -93,4 +103,24 @@ footer
     float: left;
     margin: 10px;
     width:100%;
+}
+
+main article:first-child h1
+{
+    color: blue;
+}
+
+main article:nth-child(2) h1
+{
+    color: #89ff00;
+}
+
+main article:last-child .art3
+{
+    font-size: 20px;
+}
+
+main form textarea:placeholder-shown
+{
+    padding-left: 50px;
 }
