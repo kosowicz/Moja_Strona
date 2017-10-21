@@ -20,13 +20,16 @@
                 <li><a href="#" target=”_blank”>test6</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
+
+    <!--Tworzenie maina i article-->
     <main>
     <!-- formularz-->
         <h1>Kontakt</h1>
         <form action="" method="">
-            Imie i Nazwisko<br/><input name="Imie i Nazwisko" type="text" placeholder="Imię i Nazwisko" value="" required><br/>
+            <label>Imie i Nazwisko</label><br/>
+            <input name="Imie i Nazwisko" type="text" placeholder="Imię i Nazwisko" value="" required><label>Imie i Nazwisko</label><br/>
         Telefon<br/><input type="tel" placeholder="telefon" value="" required><br/>
         email<br/><input type="email" placeholder="email" required><br/>
         hasło<br/><input type="password" placeholder="hasło" required><br/>
@@ -57,15 +60,24 @@
                 </datalist>
             </select>
         </form>
-
-
-
-
+    <!--Wybór płci-->
+        <form>
+            <input type="radio" name="gender" value="male" checked><label>Male</label><br/>
+            <input type="radio" name="gender" value="female"><label>Female</label><br/>
+            <input type="radio" name="gender" value="other"><label>Other</label><br/>
+        </form>
     </main>
 
+
+<!--Tworzenie aside-->
     <aside>
         prawa część strony
     </aside>
+</div>
+
+
+<!--Tworzenie stopki dokumentu   -->
+
     <footer>
         to jest stopka strony
     </footer>

@@ -23,14 +23,13 @@ header
     float: left;
     }
 
-     header nav
+    header nav
     {
     margin: 40px 50px 40px 0;
     float: right;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.01);
     width: auto;
-
     }
 
     header nav ul
@@ -39,71 +38,89 @@ header
         padding: 0;
     }
 
-     header nav ul li
-     {
-         display: inline;
-         list-style: none;
-         margin:auto 5px;
-         font-style: italic;
-         text-align: center;
-         padding: 5px;
+         header nav ul li
+         {
+             display: inline;
+             list-style: none;
+             margin:auto 5px;
+             font-style: italic;
+             text-align: center;
+             padding: 5px;
+         }
 
-     }
+            header nav ul li a
+            {
+                text-decoration: none;
+            }
 
-    header nav ul li a
+    ul a:hover
     {
-        text-decoration: none;
+        border-bottom: 15px solid red;
     }
 
-ul a:hover
-{
-    border-bottom: 15px solid red;
-}
-main
-{
-    width: 70%;
-    float: left;
-    height: auto;
 
-}
-    .art1
+
+.container
     {
-    background-color: white;
-    margin: auto 10px;
-    text-align: justify;
+    display: flex
+    }
+        main
+        {
+            flex: 3;
+            float: left;
+            height: auto;
+            background-color: lightskyblue;
         }
 
-    .art2
-    {
-    background-color: white;
-    margin:auto 10px;
-    text-align: justify;
-    }
+            .art1
+            {
+                border-radius: 10px;
+                background-color: white;
+                margin: auto 10px;
+                padding: 10px;
+                text-align: justify;
+            }
 
-    .art3
-    {
-    margin:auto 10px;
-    text-align: justify;
-    }
+            .art2
+            {
+                background-color: white;
+                padding: 10px;
+                margin: auto 10px;
+                text-align: justify;
+            }
 
-aside
-{
-    float: right;
-    height: auto;
-    min-height: 500px;
-    background-color: darksalmon;
-    width: 30%;
-    margin-top: 5px;
-}
+            .art3
+            {
+                border-radius: 10px;
+                background-color: whitesmoke;
+                margin: auto 10px;
+                padding: 10px;
+                text-align: justify;
+            }
 
+
+/*Tworzenie aside*/
+        aside
+        {
+            height: auto;
+            min-height: 500px;
+            background-color: darksalmon;
+            flex: 1;
+            /*margin-top: 5px;*/
+        }
+
+/*Tworzenie stopki strony*/
 footer
 {
     height: 50px;
     background-color: #aaaaaa;
     float: left;
-    margin: 10px;
-    width:100%;
+    /*margin: 10px;*/
+    width: 100%;
 }
+
+
+
 
 main article:first-child h1
 {
@@ -123,4 +140,10 @@ main article:last-child .art3
 main form textarea:placeholder-shown
 {
     padding-left: 50px;
+}
+
+input:required + label::after
+{
+    content:"*";
+    color: red;
 }
